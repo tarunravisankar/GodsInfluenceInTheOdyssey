@@ -5,6 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Minor Deities — Gods' Influence in the Odyssey</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .quote-card {
+      border-radius: 0 6px 6px 0;
+      padding: 1.5rem 1.75rem;
+      margin: 1.25rem 0;
+    }
+    .quote-card blockquote {
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--parchment);
+      line-height: 1.8;
+      margin-bottom: 0.75rem;
+      white-space: pre-line;
+    }
+    .quote-card cite {
+      font-family: 'Cinzel', serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    /* Each deity gets its own color accent */
+    .qc-calypso {
+      background: rgba(90,40,80,0.1);
+      border: 1px solid rgba(140,70,120,0.35);
+      border-left: 4px solid rgba(160,90,140,0.7);
+    }
+    .qc-calypso cite { color: #c47ab0; }
+
+    .qc-ino {
+      background: rgba(26,58,92,0.12);
+      border: 1px solid rgba(60,110,160,0.35);
+      border-left: 4px solid rgba(80,140,200,0.6);
+    }
+    .qc-ino cite { color: #6aaad4; }
+
+    .qc-helios {
+      background: rgba(120,80,10,0.1);
+      border: 1px solid rgba(200,140,30,0.35);
+      border-left: 4px solid rgba(220,160,40,0.7);
+    }
+    .qc-helios cite { color: var(--gold-dim); }
+
+    .deity-block {
+      border-top: 1px solid rgba(201,168,76,0.1);
+      padding-top: 2.5rem;
+      margin-top: 2.5rem;
+    }
+    .deity-block:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
+  </style>
 </head>
 <body>
 
@@ -22,7 +71,6 @@
 
   <div class="page">
 
-    <!-- HERO -->
     <section class="god-hero">
       <div class="god-hero-bg" style="background:
         radial-gradient(ellipse 80% 60% at 50% 20%, rgba(90,40,20,0.3) 0%, transparent 70%),
@@ -31,203 +79,254 @@
       <div class="god-hero-content">
         <span class="god-hero-icon">✨</span>
         <h1>Minor Deities</h1>
-        <p class="god-hero-epithet">Hermes · Calypso · Helios · Circe · Ino</p>
+        <p class="god-hero-epithet">Calypso · Hermes · Helios · Ino · Circe</p>
         <p class="god-hero-desc">
-          The Olympians are not the only divine forces at work. Minor gods, nymphs, and minor
-          powers each leave a distinct mark on Odysseus' journey — through temptation, aid,
-          and punishment.
+          The big three Olympians aren't the only divine forces shaping Odysseus' journey.
+          These smaller figures each leave a real mark — through temptation, crucial help,
+          or devastating punishment.
         </p>
       </div>
     </section>
 
-    <!-- BREADCRUMB -->
     <div class="breadcrumb">
       <a href="index.html">Home</a><span>›</span>Minor Deities
     </div>
 
-    <!-- INTRO -->
     <section class="section fade-in">
       <p class="section-label">Overview</p>
-      <h2>Lesser Powers, Major Consequences</h2>
+      <h2>Smaller Gods, Big Consequences</h2>
       <div class="divider"></div>
       <p>
-        While the Olympian gods set the grand terms of Odysseus' journey, it is often the
-        lesser divine figures who determine the texture of his daily survival. These beings —
-        divine messengers, sea nymphs, Titans' children — act with their own desires and agendas.
-        Each one forces Odysseus to navigate a different kind of divine power.
+        One of the things the Odyssey makes clear is that the divine world isn't just Olympus.
+        There are gods, nymphs, and divine beings everywhere Odysseus goes — on every island,
+        in every stretch of sea. Each one has their own desires and their own power, and Odysseus
+        has to navigate all of them. The minor deities on this page each represent a different
+        kind of divine force: temptation, mercy, aid, and punishment.
       </p>
     </section>
 
-    <!-- DEITY CARDS -->
     <section class="section" style="padding-top:0;">
 
       <!-- CALYPSO -->
-      <div class="minor-card" style="margin-bottom:2rem;">
-        <div class="minor-card-header">
-          <span class="minor-card-icon">🌊</span>
+      <div class="deity-block">
+        <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;">
+          <span style="font-size:2.5rem;">🌊</span>
           <div>
-            <h3>Calypso</h3>
-            <div class="minor-card-role">Sea Nymph · Captor · Obstacle</div>
+            <h2 style="margin-bottom:0.1rem;">Calypso</h2>
+            <p style="font-family:'Cinzel',serif;font-size:0.75rem;letter-spacing:0.15em;color:var(--gold-dim);text-transform:uppercase;">Sea Nymph · Divine Temptation · Obstacle</p>
           </div>
         </div>
+        <div class="divider"></div>
+
         <p>
-          Calypso, daughter of Atlas, holds Odysseus on the island of Ogygia for seven years —
-          not through violence, but through love and divine temptation. She offers him immortality
-          and eternal youth if he will remain with her. Odysseus refuses, but he cannot simply
-          leave: he has no ship, no crew, and no way off the island without divine permission.
+          Calypso holds Odysseus on her island of Ogygia for seven years. It's not a prison in the
+          violent sense — she genuinely loves him and treats him well. But Odysseus has no ship, no
+          crew, and no way out without divine permission. He's trapped by her desire for him, and
+          he hates every minute of it.
         </p>
-        <div class="quote-block" style="margin:1.25rem 0;">
-          <blockquote>
-            "She treated him with kindness and kept him well, and she vowed she would make him
-            immortal and ageless all his days — but she could not persuade the heart in his breast."
-          </blockquote>
-          <cite>— Homer, <em>Odyssey</em>, Book V (trans. Lattimore)</cite>
+        <p style="margin-top:1rem;">
+          She even tries to sweeten the deal by offering him immortality and eternal youth — stay
+          with her and never age, never die. He still says no. That tells you a lot about Odysseus:
+          even immortality isn't worth staying away from home.
+        </p>
+
+        <h3 style="margin-top:1.75rem;">He's Miserable Despite Her Love — Book 5</h3>
+        <p>
+          This passage captures the whole dynamic between them. She wants him, he doesn't want her
+          anymore. He has no choice but to stay — he literally cannot leave. He spends his nights
+          with her and his days crying on the beach. It's one of the most quietly devastating
+          descriptions in the epic.
+        </p>
+        <div class="quote-card qc-calypso">
+          <blockquote>"She found him on the shore. His eyes were always
+tearful; he wept sweet life away, in longing
+to go back home, since she no longer pleased him.
+He had no choice. He spent his nights with her
+inside her hollow cave, not wanting her
+though she still wanted him."</blockquote>
+          <cite>— Od. 5.151–156</cite>
         </div>
+
+        <h3 style="margin-top:1.75rem;">She Offers Him Immortality — Book 5</h3>
         <p>
-          Calypso represents a particular kind of divine obstacle: not wrath or punishment, but
-          desire. Her island is a gilded cage. The <em>Odyssey</em> uses her to explore the idea
-          that even divine love — or divine <em>want</em> — can trap a mortal. She is only forced
-          to release Odysseus when Zeus sends Hermes with an explicit command, underscoring that
-          minor deities exist within a hierarchy they cannot defy.
+          When Zeus finally orders her to release Odysseus, Calypso makes one last attempt to
+          convince him to stay. She points out that she's a goddess, that she's more beautiful
+          than Penelope, and that she's offering him something no mortal woman ever could —
+          immortality. He still chooses home. This quote also shows the gods' vanity and how
+          personal their feelings are.
         </p>
+        <div class="quote-card qc-calypso">
+          <blockquote>"But if you understood
+how glutted you will be with suffering
+before you reach your home, you would stay here
+with me and be immortal—though you might
+still wish to see that wife you always pine for.
+And anyway, I know my body is
+better than hers is. I am taller too.
+Mortals can never rival the immortals
+in beauty."</blockquote>
+          <cite>— Od. 5.206–213</cite>
+        </div>
       </div>
 
-      <!-- HERMES -->
-      <div class="minor-card" style="margin-bottom:2rem;">
-        <div class="minor-card-header">
-          <span class="minor-card-icon">🪄</span>
+      <!-- INO -->
+      <div class="deity-block">
+        <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;">
+          <span style="font-size:2.5rem;">🧣</span>
           <div>
-            <h3>Hermes</h3>
-            <div class="minor-card-role">Divine Messenger · Ally · Guide</div>
+            <h2 style="margin-bottom:0.1rem;">Ino (Leucothea)</h2>
+            <p style="font-family:'Cinzel',serif;font-size:0.75rem;letter-spacing:0.15em;color:var(--gold-dim);text-transform:uppercase;">Sea Goddess · Unexpected Savior</p>
           </div>
         </div>
+        <div class="divider"></div>
+
         <p>
-          Hermes, the messenger of the gods, acts as a crucial agent in two of the most pivotal
-          moments of the <em>Odyssey</em>. His role is always executive: he carries out decisions
-          already made by higher powers, but without his intervention those decisions would remain
-          abstract.
+          Ino is a brief but important character. She was once a mortal woman who became a sea
+          goddess, and she appears out of nowhere in Book 5 when Odysseus is drowning after
+          Poseidon destroys his raft. She rises from the water, gives him her divine veil to
+          keep him afloat, and then dives back in. That's it — she's gone just as fast as she
+          appeared.
+        </p>
+        <p style="margin-top:1rem;">
+          What makes her interesting is that there's no political motive here. Athena helps
+          Odysseus because she's invested in him. Hermes acts on Zeus' orders. Ino helps
+          Odysseus purely out of mercy. It's one of the few completely selfless divine acts
+          in the whole epic.
         </p>
 
-        <div class="interventions" style="margin:1.25rem 0;">
-          <div class="intervention">
-            <div class="intervention-num">I</div>
-            <div class="intervention-text">
-              <strong>Delivering Zeus' Command to Calypso — Book V</strong>
-              When Zeus decides that Odysseus must be released, Hermes is dispatched to Ogygia
-              to deliver the order to Calypso. His visit triggers the plot: Calypso, reluctantly,
-              agrees to let Odysseus build a raft and go. Without Hermes, the release never happens.
-            </div>
-          </div>
-          <div class="intervention">
-            <div class="intervention-num">II</div>
-            <div class="intervention-text">
-              <strong>The Herb Moly — Book X</strong>
-              When Odysseus is about to approach Circe — who has already turned his men into pigs —
-              Hermes appears and gives him a magical herb called <em>moly</em> that will protect
-              him from her enchantments. This allows Odysseus to force Circe to restore his crew.
-              Without Hermes' gift, Odysseus would have been transformed alongside his men.
-            </div>
-          </div>
-        </div>
-
-        <div class="quote-block">
-          <blockquote>
-            "Hermes gave me the herb, drawing it from the ground, and showed me its nature. At the
-            root it was black, but the flower was like milk."
-          </blockquote>
-          <cite>— Homer, <em>Odyssey</em>, Book X (trans. Lattimore)</cite>
+        <h3 style="margin-top:1.75rem;">She Gives Odysseus Her Veil — Book 5</h3>
+        <p>
+          This is one of the most cinematic moments in the Odyssey. Odysseus is completely
+          underwater, Poseidon has just annihilated his raft, and a sea goddess surfaces,
+          hands him a magic veil, tells him to tie it around himself and swim, and then dives
+          back in like a gull. Simple, fast, and it saves his life.
+        </p>
+        <div class="quote-card qc-ino">
+          <blockquote>"Here, take my scarf and tie it
+under your chest: with this immortal veil,
+you need not be afraid of death or danger.
+But when you reach dry earth, untie the scarf
+and throw it out to sea, away from land,
+and turn away." With that, the goddess gave it,
+and plunged back down inside the surging sea,
+just like a gull.</blockquote>
+          <cite>— Od. 5.346–353</cite>
         </div>
       </div>
 
       <!-- HELIOS -->
-      <div class="minor-card" style="margin-bottom:2rem;">
-        <div class="minor-card-header">
-          <span class="minor-card-icon">☀️</span>
+      <div class="deity-block">
+        <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;">
+          <span style="font-size:2.5rem;">☀️</span>
           <div>
-            <h3>Helios</h3>
-            <div class="minor-card-role">God of the Sun · Avenger</div>
+            <h2 style="margin-bottom:0.1rem;">Helios</h2>
+            <p style="font-family:'Cinzel',serif;font-size:0.75rem;letter-spacing:0.15em;color:var(--gold-dim);text-transform:uppercase;">God of the Sun · Divine Avenger</p>
           </div>
         </div>
+        <div class="divider"></div>
+
         <p>
-          Helios, god of the sun, plays a relatively small but catastrophic role in the
-          <em>Odyssey</em>. His sacred cattle graze on the island of Thrinacia, and Odysseus is
-          explicitly warned — by Tiresias in the underworld and by Circe — that harming them will
-          mean destruction.
+          Helios doesn't interact with Odysseus directly, but he causes the single most
+          catastrophic event of the entire journey. His sacred cattle graze on the island
+          of Thrinacia, and both Tiresias and Circe give Odysseus explicit, detailed warnings:
+          do not touch those cows, or everyone dies.
         </p>
         <p style="margin-top:1rem;">
-          When Odysseus' starving crew slaughters the cattle anyway (while Odysseus sleeps),
-          Helios petitions Zeus for justice. Zeus responds with a thunderbolt that sinks the ship
-          and kills every man except Odysseus. This episode is one of the clearest demonstrations
-          in the <em>Odyssey</em> that divine property is sacred and that impiety toward any god
-          — even a minor one — has mortal consequences.
+          Odysseus tries to enforce the rule, but while he's asleep his starving crew slaughters
+          the cattle anyway. Helios finds out, goes straight to Zeus, and demands justice. Zeus
+          delivers it with a thunderbolt. Every single crewman dies. Odysseus is the only survivor.
         </p>
-        <div class="quote-block" style="margin-top:1.25rem;">
-          <blockquote>
-            "Hyperion the Sun-god then appealed to Zeus... 'Punish the men of Odysseus, or I will
-            go down to Hades and shine among the dead.'"
-          </blockquote>
-          <cite>— Homer, <em>Odyssey</em>, Book XII (paraphrased from Lattimore)</cite>
+
+        <h3 style="margin-top:1.75rem;">Helios Demands Punishment — Book 12</h3>
+        <p>
+          This is one of the most direct moments of divine communication in the epic. Helios
+          isn't threatening abstractly — he tells Zeus exactly what he wants and backs it up
+          with a very specific threat: if Zeus doesn't punish them, he'll go shine in the
+          underworld instead. That's how seriously he takes this.
+        </p>
+        <div class="quote-card qc-helios">
+          <blockquote>"Great Zeus,
+and all you other deathless gods, you must
+punish Odysseus' men. They killed
+my cattle! I delighted in those cows
+all through each day, when I went up to heaven
+and when I turned to earth."</blockquote>
+          <cite>— Od. 12.375–380</cite>
+        </div>
+
+        <h3 style="margin-top:1.75rem;">Zeus Responds — Book 12</h3>
+        <p>
+          Zeus doesn't hesitate. He sends down a thunderbolt that sinks the ship instantly.
+          The imagery here — men scattered like seagulls — is brutal and fast. The gods
+          prevented them from reaching home. It's that simple. Touch Helios' cattle, you
+          don't make it back.
+        </p>
+        <div class="quote-card qc-helios">
+          <blockquote>"Zeus thundered and hurled bolts to strike the ship;
+shaken, it filled with sulfur. All the men
+fell overboard, and they were swept away
+like seagulls on the waves beside the ship.
+The gods prevented them from reaching home."</blockquote>
+          <cite>— Od. 12.414–418</cite>
         </div>
       </div>
 
-      <!-- CIRCE + INO -->
-      <div class="minor-grid">
-
-        <div class="minor-card">
-          <div class="minor-card-header">
-            <span class="minor-card-icon">🌿</span>
-            <div>
-              <h3>Circe</h3>
-              <div class="minor-card-role">Sorceress · Obstacle & Guide</div>
+      <!-- HERMES + CIRCE (no new quotes, keep brief) -->
+      <div class="deity-block">
+        <div style="display:flex;gap:2rem;flex-wrap:wrap;">
+          <div style="flex:1;min-width:220px;">
+            <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.75rem;">
+              <span style="font-size:2rem;">🪄</span>
+              <div>
+                <h3 style="margin:0;color:var(--gold);">Hermes</h3>
+                <p style="font-family:'Cinzel',serif;font-size:0.7rem;letter-spacing:0.1em;color:var(--gold-dim);text-transform:uppercase;">Divine Messenger · Ally</p>
+              </div>
             </div>
+            <p style="font-size:0.95rem;color:var(--parchment-dark);">
+              Hermes shows up twice in ways that directly save Odysseus. First he carries Zeus'
+              order to Calypso to release him — without that message, Odysseus never leaves the
+              island. Then in Book 10 he gives Odysseus the herb <em>moly</em> before he
+              approaches Circe, which is the only reason Odysseus doesn't get turned into a pig
+              like his crew.
+            </p>
           </div>
-          <p>
-            Circe, daughter of Helios, first transforms Odysseus' crew into pigs, then — after
-            Odysseus overpowers her with Hermes' help — becomes his ally. She hosts him for a year
-            and ultimately guides him toward the underworld to seek Tiresias' prophecy. She is both
-            obstacle and indispensable guide.
-          </p>
-        </div>
-
-        <div class="minor-card">
-          <div class="minor-card-header">
-            <span class="minor-card-icon">🧣</span>
-            <div>
-              <h3>Ino (Leucothea)</h3>
-              <div class="minor-card-role">Sea Goddess · Savior</div>
+          <div style="flex:1;min-width:220px;">
+            <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.75rem;">
+              <span style="font-size:2rem;">🌿</span>
+              <div>
+                <h3 style="margin:0;color:var(--gold);">Circe</h3>
+                <p style="font-family:'Cinzel',serif;font-size:0.7rem;letter-spacing:0.1em;color:var(--gold-dim);text-transform:uppercase;">Sorceress · Obstacle & Guide</p>
+              </div>
             </div>
+            <p style="font-size:0.95rem;color:var(--parchment-dark);">
+              Circe starts as an enemy — she turns Odysseus' crew into pigs — but once he
+              overpowers her enchantments with Hermes' help, she becomes an invaluable guide.
+              She tells him he needs to visit the underworld to consult Tiresias, gives him
+              detailed sailing instructions, and hosts him for a full year. She's both
+              obstacle and resource.
+            </p>
           </div>
-          <p>
-            When Poseidon wrecks Odysseus' raft in Book V, the sea goddess Ino appears and gives
-            him her divine veil, instructing him to tie it around his waist and swim for shore.
-            Her brief appearance is an act of pure, unprompted mercy — a reminder that not all
-            divine forces are bound up in the major drama of the epic.
-          </p>
         </div>
-
       </div>
+
     </section>
 
-    <!-- ANALYSIS -->
-    <section class="section" style="padding-top:1rem;">
+    <section class="section" style="padding-top:0;">
       <p class="section-label">Analysis</p>
-      <h2>A World Saturated with the Divine</h2>
+      <h2>A World Full of Divine Forces</h2>
       <div class="divider"></div>
       <p>
-        The minor deities of the <em>Odyssey</em> collectively paint a picture of a world where
-        the divine is everywhere — not confined to Olympus or to the great Olympian gods, but
-        present in every island, every sea, every ray of sunlight. Odysseus cannot travel anywhere
-        without encountering divine beings with their own desires, loyalties, and powers.
+        Every island, every stretch of sea in the Odyssey has some kind of divine presence.
+        Odysseus can't go anywhere without running into a being with their own desires and
+        power over his fate. Calypso wants him to stay. Ino helps him out of mercy. Helios
+        destroys his crew for a transgression. Hermes gives him the tool to survive Circe.
       </p>
       <p style="margin-top:1rem;">
-        This also reinforces the project's central argument: no single factor explains Odysseus'
-        survival. He survives Calypso's island because Zeus commands it and Hermes carries the
-        order. He survives Circe because Hermes gives him moly. He survives Poseidon's storm
-        because Ino lends him her veil. At every turn, a divine hand reaches in.
-      </p>
-      <p style="margin-top:1rem;">
-        Human cunning — <em>mētis</em> — is necessary but never sufficient. In Homer's cosmos, the
-        gods are not distant or silent. They are present, opinionated, and consequential.
+        Taken together, these minor characters reinforce the project's central point: no single
+        factor explains why Odysseus makes it home. It's not just his intelligence, and it's not
+        just one divine patron. It's a web of divine forces — some helping, some hurting, some
+        just doing their own thing — that he has to survive his way through. That's what the
+        Odyssey is really about.
       </p>
       <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;">
         <a href="quiz.html" class="btn btn-primary" style="text-decoration:none;">Take the Quiz →</a>
