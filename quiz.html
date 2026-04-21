@@ -22,13 +22,11 @@
 
   <div class="page">
 
-    <!-- HERO -->
     <section class="god-hero" style="min-height:30vh;">
       <div class="god-hero-bg" style="background:
         radial-gradient(ellipse 60% 50% at 50% 20%, rgba(80,60,10,0.3) 0%, transparent 70%),
         linear-gradient(180deg, #0d0a04 0%, #1a1209 100%);"></div>
       <div class="god-hero-content">
-        <span class="god-hero-icon">📜</span>
         <h1>Divine Knowledge Quiz</h1>
         <p class="god-hero-epithet">Test Your Mastery of the Gods' Roles</p>
         <p class="god-hero-desc">
@@ -38,17 +36,9 @@
       </div>
     </section>
 
-    <!-- BREADCRUMB -->
-    <div class="breadcrumb">
-      <a href="index.html">Home</a><span>›</span>Quiz
-    </div>
-
-    <!-- QUIZ -->
     <div class="quiz-container">
 
-      <!-- Start Screen -->
       <div id="start-screen" style="text-align:center;padding:3rem 0;">
-        <div style="font-size:3.5rem;margin-bottom:1.5rem;">⚡ 🦉 🔱</div>
         <h2 style="font-family:'Cinzel Decorative',serif;font-size:1.8rem;color:var(--gold);margin-bottom:1rem;">
           Are You Ready?
         </h2>
@@ -59,7 +49,6 @@
         <button class="btn btn-primary" onclick="startQuiz()">Begin the Quiz</button>
       </div>
 
-      <!-- Quiz Screen -->
       <div id="quiz-screen" style="display:none;">
 
         <div class="quiz-progress">
@@ -85,7 +74,6 @@
 
       </div>
 
-      <!-- Results Screen -->
       <div id="results-screen" style="display:none;">
         <div class="score-card">
           <div class="score-icon" id="score-icon">🏆</div>
@@ -103,7 +91,6 @@
           </div>
         </div>
 
-        <!-- Answer Review -->
         <div style="margin-top:3rem;">
           <h3 style="font-family:'Cinzel',serif;color:var(--gold);margin-bottom:1.5rem;font-size:1rem;letter-spacing:0.1em;text-transform:uppercase;">Review Your Answers</h3>
           <div id="review-list"></div>
@@ -115,7 +102,7 @@
 
   <footer>
     <p>Gods' Influence in the Odyssey · C C 303 Intro to Classical Mythology · Spring 2026</p>
-    <p>Primary Source: Homer, <em>Odyssey</em> · Secondary Sources: Oxford Classical Dictionary</p>
+    <p>Primary Source: Homer, <em>Odyssey</em></p>
   </footer>
 
   <script>
@@ -261,7 +248,9 @@
     }
 
     function selectAnswer(index) {
-      if (answered) return;
+      if (answered) {
+        return;
+      } 
       answered = true;
 
       const q = questions[current];
@@ -309,17 +298,17 @@
       document.getElementById('stat-wrong').textContent = questions.length - score;
       document.getElementById('stat-pct').textContent = `${pct}%`;
 
-      let icon, message;
+      let message;
       if (score === 10) {
-        icon = '🏆'; message = "Perfect score! You have the wisdom of Athena herself. Odysseus would be lucky to have you as a divine patron.";
+        message = "Perfect score! You have the wisdom of Athena herself. Odysseus would be lucky to have you as a divine patron.";
       } else if (score >= 8) {
-        icon = '🦉'; message = "Excellent! You clearly know your Homer. Athena would be pleased — you've mastered the divine landscape of the Odyssey.";
+        message = "Excellent! You clearly know your Homer. Athena would be pleased — you've mastered the divine landscape of the Odyssey.";
       } else if (score >= 6) {
-        icon = '⚡'; message = "Well done! A solid understanding of the gods' roles. A few more readings of the Odyssey and you'll be truly formidable.";
+        message = "Well done! A solid understanding of the gods' roles. A few more readings of the Odyssey and you'll be truly formidable.";
       } else if (score >= 4) {
-        icon = '🔱'; message = "Not bad — you're on Poseidon's level. Some turbulent waters, but you've made it through. Review the pages and try again.";
+        message = "Not bad — you're on Poseidon's level. Some turbulent waters, but you've made it through. Review the pages and try again.";
       } else {
-        icon = '🌊'; message = "The gods are mysterious, and so it seems is this quiz! Revisit the pages on each deity and try again — the sea is vast.";
+        message = "The gods are mysterious, and so it seems is this quiz! Revisit the pages on each deity and try again — the sea is vast.";
       }
 
       document.getElementById('score-icon').textContent = icon;
