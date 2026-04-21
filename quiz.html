@@ -28,11 +28,6 @@
         linear-gradient(180deg, #0d0a04 0%, #1a1209 100%);"></div>
       <div class="god-hero-content">
         <h1>Divine Knowledge Quiz</h1>
-        <p class="god-hero-epithet">Test Your Mastery of the Gods' Roles</p>
-        <p class="god-hero-desc">
-          Ten questions on the gods of the <em>Odyssey</em> — their motives, interventions,
-          and significance. How well do you know the divine world?
-        </p>
       </div>
     </section>
 
@@ -42,10 +37,6 @@
         <h2 style="font-family:'Cinzel Decorative',serif;font-size:1.8rem;color:var(--gold);margin-bottom:1rem;">
           Are You Ready?
         </h2>
-        <p style="color:var(--parchment-dark);max-width:480px;margin:0 auto 2rem;font-style:italic;">
-          10 questions await you. Each one tests your understanding of how the gods shaped
-          Odysseus' journey home. There is no time limit — read carefully.
-        </p>
         <button class="btn btn-primary" onclick="startQuiz()">Begin the Quiz</button>
       </div>
 
@@ -108,136 +99,136 @@
   <script>
     const questions = [
       {
-        q: "At the opening council on Olympus in Book I, which goddess pleads for Odysseus' release from Calypso's island?",
+        q: "At the start of Book 1, which goddess asks Zeus to help Odysseus get home?",
         options: ["Hera", "Athena", "Aphrodite", "Artemis"],
         answer: 1,
-        feedback: "Correct! Athena opens the epic by petitioning Zeus on Odysseus' behalf while Poseidon is away attending a feast in Ethiopia.",
-        wrongFeedback: "Not quite. It is Athena who petitions Zeus in Book I, seizing the opportunity while Poseidon is distracted at a feast."
+        feedback: "Yep, Athena steps in for Odysseus while Poseidon is away.",
+        wrongFeedback: "Not quite. Athena is the one who argues for Odysseus."
       },
       {
-        q: "Why does Poseidon hold a devastating grudge against Odysseus throughout the Odyssey?",
+        q: "Why is Poseidon so angry at Odysseus?",
         options: [
-          "Odysseus stole Poseidon's golden trident",
-          "Odysseus refused to sacrifice to Poseidon before sailing",
-          "Odysseus blinded Poseidon's son, the Cyclops Polyphemus",
-          "Odysseus sided with Athens over Poseidon in their ancient contest"
+          "Odysseus stole his trident",
+          "Odysseus didn’t pray to him",
+          "Odysseus blinded his son, the Cyclops",
+          "Odysseus chose Athena over him"
         ],
         answer: 2,
-        feedback: "Correct! Odysseus blinded Polyphemus in Book IX and then foolishly revealed his real name, allowing the Cyclops to pray to his father Poseidon for revenge.",
-        wrongFeedback: "Not quite. Poseidon's wrath stems from Odysseus blinding his son Polyphemus the Cyclops, and then taunting him by revealing his real name."
+        feedback: "Right, Odysseus blinds Polyphemus and then makes it worse by revealing his name.",
+        wrongFeedback: "Nope. It’s because Odysseus blinded Poseidon’s son, Polyphemus."
       },
       {
-        q: "In Book X, what herb does Hermes give Odysseus to protect him from Circe's enchantments?",
-        options: ["Asphodel", "Ambrosia", "Moly", "Nepenthe"],
+        q: "In Book 10, what does Hermes give Odysseus to protect him from Circe?",
+        options: ["Asphodel", "Ambrosia", "Moly", "Nectar"],
         answer: 2,
-        feedback: "Correct! Hermes gives Odysseus the herb called moly — black at the root, white-flowered — which counters Circe's magic.",
-        wrongFeedback: "Not quite. The herb is called moly. Hermes describes it as black at the root with a milk-white flower."
+        feedback: "Correct — the herb moly protects him from Circe’s magic.",
+        wrongFeedback: "It’s moly — a magical plant that blocks Circe’s spell."
       },
       {
-        q: "Which minor sea goddess appears in Book V to give Odysseus her divine veil so he can survive swimming to shore?",
-        options: ["Thetis", "Calypso", "Ino (Leucothea)", "Circe"],
+        q: "Who helps Odysseus survive the storm in Book 5 by giving him a magical veil?",
+        options: ["Thetis", "Calypso", "Ino", "Circe"],
         answer: 2,
-        feedback: "Correct! Ino, also called Leucothea, rises from the sea and gifts Odysseus her veil to keep him afloat after Poseidon wrecks his raft.",
-        wrongFeedback: "Not quite. It is Ino, the sea goddess also called Leucothea, who offers Odysseus her divine veil in an act of unprompted mercy."
+        feedback: "Yep, Ino saves him with the veil.",
+        wrongFeedback: "It’s Ino, a sea goddess who helps him unexpectedly."
       },
       {
-        q: "Why does Zeus ultimately punish Odysseus' crew with a fatal thunderbolt in Book XII?",
+        q: "Why does Zeus destroy Odysseus’ ship in Book 12?",
         options: [
-          "They mutinied against Odysseus",
-          "They slaughtered the sacred Cattle of Helios",
-          "They offended Poseidon by sailing without ritual",
-          "They opened the bag of winds given by Aeolus"
+          "The crew mutinied",
+          "They killed Helios’ sacred cattle",
+          "They ignored Poseidon",
+          "They opened the wind bag"
         ],
         answer: 1,
-        feedback: "Correct! Despite explicit warnings from Tiresias and Circe, the starving crew slaughters Helios' sacred cattle. Helios petitions Zeus, who destroys the ship.",
-        wrongFeedback: "Not quite. The crew is punished for killing the sacred Cattle of Helios on the island of Thrinacia — an act of impiety with fatal consequences."
+        feedback: "Exactly, they eat the sacred cattle, which Zeus punishes.",
+        wrongFeedback: "They were punished for killing Helios’ sacred cattle."
       },
       {
-        q: "How does Athena disguise Odysseus when he returns to Ithaca in Book XIII so he can move undetected among the suitors?",
+        q: "How does Athena disguise Odysseus when he returns home in Book 13?",
         options: [
-          "She transforms him into a seagull",
-          "She makes him invisible",
-          "She disguises him as an aged beggar",
-          "She gives him Hermes' winged sandals"
+          "As a bird",
+          "Invisible",
+          "As an old beggar",
+          "As a soldier"
         ],
         answer: 2,
-        feedback: "Correct! Athena transforms Odysseus into a wizened old beggar — withered skin, tattered clothes, clouded eyes — so he can scope out the suitors undetected.",
-        wrongFeedback: "Not quite. Athena disguises Odysseus as an aged beggar, allowing him to move through his own palace without being recognized."
+        feedback: "Right, she turns him into an old beggar so no one recognizes him.",
+        wrongFeedback: "Athena disguises him as an old beggar."
       },
       {
-        q: "What does Calypso offer Odysseus if he will stay on her island of Ogygia permanently?",
+        q: "What does Calypso offer Odysseus if he stays with her?",
         options: [
-          "A vast fleet of ships and a crew",
-          "Immortality and eternal youth",
-          "Victory over all his enemies",
-          "Knowledge of the future"
+          "A fleet of ships",
+          "Immortality",
+          "Power over enemies",
+          "Future knowledge"
         ],
         answer: 1,
-        feedback: "Correct! Calypso offers Odysseus immortality and eternal youth — to become like a god. Despite seven years, he refuses and longs for home.",
-        wrongFeedback: "Not quite. Calypso's offer is immortality and eternal youth. Even this extraordinary gift cannot overcome Odysseus' longing for Ithaca and Penelope."
+        feedback: "Yes, she offers immortality, but he still wants to go home.",
+        wrongFeedback: "She offers him immortality and eternal youth."
       },
       {
-        q: "In the Odyssey's final book, what role does Zeus play to bring the story to a peaceful close?",
+        q: "At the end of the Odyssey, what does Zeus do to stop more fighting?",
         options: [
-          "He punishes Poseidon by confining him to the sea",
-          "He sends Athena to stop the civil war breaking out in Ithaca",
-          "He appears directly to Odysseus and grants him a divine blessing",
-          "He transforms the slain suitors into birds"
+          "Punishes Poseidon",
+          "Sends Athena to stop it",
+          "Talks to Odysseus directly",
+          "Revives the suitors"
         ],
         answer: 1,
-        feedback: "Correct! Zeus directs Athena to descend and enforce a truce in Ithaca, preventing the families of the dead suitors from starting an all-out war.",
-        wrongFeedback: "Not quite. Zeus sends Athena to stop the civil strife that erupts in Ithaca, closing the epic with the same divine collaboration that opened it."
+        feedback: "Correct, Zeus sends Athena to bring peace.",
+        wrongFeedback: "Zeus sends Athena to stop the conflict."
       },
       {
-        q: "Disguised as Mentor, which god or goddess visits Telemachus in Ithaca to rouse him to action against the suitors?",
+        q: "Who visits Telemachus disguised as Mentor?",
         options: ["Hermes", "Zeus", "Athena", "Apollo"],
         answer: 2,
-        feedback: "Correct! Athena takes on the likeness of Mentor, an old family friend, to inspire Telemachus to stand up to the suitors and sail in search of news of his father.",
-        wrongFeedback: "Not quite. It is Athena who disguises herself as the family friend Mentor and visits Telemachus, setting his storyline in motion."
+        feedback: "Right, Athena motivates him to take action.",
+        wrongFeedback: "It’s Athena in disguise."
       },
       {
-        q: "Which of the following best captures the central argument of this project about Odysseus' survival?",
+        q: "What’s the main idea of Odysseus’ survival in this project?",
         options: [
-          "Odysseus survives purely through his own physical strength and warrior skill",
-          "The gods are irrelevant — Odysseus' fate was determined by blind fortune",
-          "Odysseus survives through a combination of cunning intelligence and direct divine assistance",
-          "Only Athena matters; the other gods play no meaningful role"
+          "Only strength matters",
+          "It’s all luck",
+          "Both intelligence and help from the gods matter",
+          "Only Athena matters"
         ],
         answer: 2,
-        feedback: "Exactly right! The Odyssey presents survival as the product of both human mētis (cunning) and divine intervention — neither alone is sufficient.",
-        wrongFeedback: "Not quite. The project's central argument is that Odysseus' survival depends on both his own cunning intelligence AND the active intervention of divine powers."
+        feedback: "Exactly, it’s a mix of Odysseus’ cleverness and divine help.",
+        wrongFeedback: "The key idea is both human intelligence AND divine help."
       }
     ];
-
+  
     let current = 0;
     let score = 0;
     let answered = false;
     let userAnswers = [];
-
+  
     function startQuiz() {
       document.getElementById('start-screen').style.display = 'none';
       document.getElementById('quiz-screen').style.display = 'block';
       renderQuestion();
     }
-
+  
     function renderQuestion() {
       const q = questions[current];
       answered = false;
-
+  
       document.getElementById('q-num').textContent = `Question ${current + 1}`;
       document.getElementById('q-text').textContent = q.q;
       document.getElementById('progress-text').textContent = `Question ${current + 1} of ${questions.length}`;
       document.getElementById('progress-fill').style.width = `${((current + 1) / questions.length) * 100}%`;
       document.getElementById('score-live').textContent = `Score: ${score}`;
       document.getElementById('next-btn').style.display = 'none';
-
+  
       const feedback = document.getElementById('q-feedback');
-      feedback.className = 'quiz-feedback';
       feedback.textContent = '';
-
+      feedback.className = 'quiz-feedback';
+  
       const optionsEl = document.getElementById('q-options');
       optionsEl.innerHTML = '';
-
+  
       q.options.forEach((opt, i) => {
         const btn = document.createElement('button');
         btn.className = 'quiz-option';
@@ -246,39 +237,37 @@
         optionsEl.appendChild(btn);
       });
     }
-
+  
     function selectAnswer(index) {
-      if (answered) {
-        return;
-      } 
+      if (answered) return;
       answered = true;
-
+  
       const q = questions[current];
       const options = document.querySelectorAll('.quiz-option');
       const feedback = document.getElementById('q-feedback');
-
+  
       options.forEach(btn => btn.disabled = true);
       options[q.answer].classList.add('correct');
-
-      const isCorrect = index === q.answer;
-      if (!isCorrect) {
+  
+      if (index === q.answer) {
+        score++;
+        feedback.textContent = q.feedback;
+        feedback.className = 'quiz-feedback correct show';
+      } else {
         options[index].classList.add('wrong');
         feedback.textContent = q.wrongFeedback;
         feedback.className = 'quiz-feedback wrong show';
-      } else {
-        score++;
-        document.getElementById('score-live').textContent = `Score: ${score}`;
-        feedback.textContent = q.feedback;
-        feedback.className = 'quiz-feedback correct show';
       }
-
-      userAnswers.push({ question: q.q, selected: index, correct: q.answer, isCorrect });
-
+  
+      document.getElementById('score-live').textContent = `Score: ${score}`;
+  
+      userAnswers.push(index);
+  
       const nextBtn = document.getElementById('next-btn');
-      nextBtn.textContent = current === questions.length - 1 ? 'See Results →' : 'Next Question →';
+      nextBtn.textContent = current === questions.length - 1 ? 'See Results →' : 'Next →';
       nextBtn.style.display = 'inline-block';
     }
-
+  
     function nextQuestion() {
       current++;
       if (current >= questions.length) {
@@ -287,68 +276,43 @@
         renderQuestion();
       }
     }
-
+  
     function showResults() {
       document.getElementById('quiz-screen').style.display = 'none';
       document.getElementById('results-screen').style.display = 'block';
-
+  
       const pct = Math.round((score / questions.length) * 100);
+  
       document.getElementById('score-value').textContent = `${score}/${questions.length}`;
       document.getElementById('stat-correct').textContent = score;
       document.getElementById('stat-wrong').textContent = questions.length - score;
       document.getElementById('stat-pct').textContent = `${pct}%`;
-
-      let message;
+  
+      let message = "";
+      
+  
       if (score === 10) {
-        message = "Perfect score! You have the wisdom of Athena herself. Odysseus would be lucky to have you as a divine patron.";
+        message = "Perfect, you really know the Odyssey!";
       } else if (score >= 8) {
-        message = "Excellent! You clearly know your Homer. Athena would be pleased — you've mastered the divine landscape of the Odyssey.";
+        message = "Great job! You clearly understand the gods’ roles.";
       } else if (score >= 6) {
-        message = "Well done! A solid understanding of the gods' roles. A few more readings of the Odyssey and you'll be truly formidable.";
-      } else if (score >= 4) {
-        message = "Not bad — you're on Poseidon's level. Some turbulent waters, but you've made it through. Review the pages and try again.";
+        message = "Pretty solid you just a bit more review and you’ve got it.";
       } else {
-        message = "The gods are mysterious, and so it seems is this quiz! Revisit the pages on each deity and try again — the sea is vast.";
+        message = "You might want to review a bit and try again.";
       }
-
-      document.getElementById('score-icon').textContent = icon;
+  
       document.getElementById('score-message').textContent = message;
-
-      // Build review
-      const reviewList = document.getElementById('review-list');
-      reviewList.innerHTML = '';
-      userAnswers.forEach((ua, i) => {
-        const q = questions[i];
-        const div = document.createElement('div');
-        div.style.cssText = `
-          background: rgba(255,255,255,0.02);
-          border: 1px solid ${ua.isCorrect ? 'rgba(74,94,42,0.3)' : 'rgba(181,74,42,0.3)'};
-          border-radius: 4px;
-          padding: 1.25rem 1.5rem;
-          margin-bottom: 1rem;
-        `;
-        div.innerHTML = `
-          <div style="font-family:'Cinzel',serif;font-size:0.75rem;letter-spacing:0.1em;color:${ua.isCorrect ? '#8cb87a' : '#e07a6a'};text-transform:uppercase;margin-bottom:0.5rem;">
-            ${ua.isCorrect ? '✓ Correct' : '✗ Incorrect'} — Question ${i + 1}
-          </div>
-          <div style="color:var(--parchment);margin-bottom:0.5rem;font-size:0.95rem;">${q.q}</div>
-          ${!ua.isCorrect ? `<div style="font-size:0.88rem;color:var(--parchment-dark);font-style:italic;">Correct answer: <span style="color:var(--gold-light)">${q.options[q.answer]}</span></div>` : ''}
-        `;
-        reviewList.appendChild(div);
-      });
-
-      window.scrollTo({ top: document.getElementById('results-screen').offsetTop - 80, behavior: 'smooth' });
     }
-
+  
     function restartQuiz() {
       current = 0;
       score = 0;
-      answered = false;
       userAnswers = [];
+  
       document.getElementById('results-screen').style.display = 'none';
       document.getElementById('quiz-screen').style.display = 'block';
+  
       renderQuestion();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   </script>
 
