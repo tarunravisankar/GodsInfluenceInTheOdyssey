@@ -359,9 +359,6 @@ nav {
   letter-spacing: 0.07em;
 }
 
-.progress-bar { flex: 1; height: 2px; background: rgba(201,168,76,0.12); border-radius: 1px; overflow: hidden; }
-.progress-fill { height: 100%; background: var(--gold-dim); transition: width 0.35s ease; }
-
 .quiz-question-card {
   background: var(--ink-mid);
   border: 1px solid rgba(201,168,76,0.15);
@@ -416,7 +413,13 @@ nav {
 
 .quiz-nav { display: flex; justify-content: flex-end; margin-top: 1.25rem; }
 
-/* SCORE CARD */
+.review-card {
+  border: 1px solid var(--gold-dim);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
 .score-card {
   text-align: center;
   padding: 2.25rem 2rem;
@@ -433,7 +436,6 @@ nav {
 .score-stat { background: rgba(201,168,76,0.04); border: 1px solid rgba(201,168,76,0.12); border-radius: 3px; padding: 0.6rem 1.25rem; font-family: 'Cinzel', serif; font-size: 0.75rem; color: var(--parchment-dark); }
 .score-stat strong { display: block; font-size: 1.3rem; color: var(--gold); }
 
-/* FOOTER */
 footer {
   border-top: 1px solid rgba(201,168,76,0.1);
   padding: 1.75rem 2rem;
@@ -447,7 +449,6 @@ footer p + p { margin-top: 0.35rem; }
 
 .fade-in { opacity: 1; }
 
-/* RESPONSIVE */
 @media (max-width: 640px) {
   nav { padding: 0 1rem; }
   .nav-brand { font-size: 0.78rem; }

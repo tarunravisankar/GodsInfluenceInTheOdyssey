@@ -43,9 +43,6 @@
 
         <div class="quiz-progress">
           <span id="progress-text">Question 1 of 10</span>
-          <div class="progress-bar">
-            <div class="progress-fill" id="progress-fill" style="width:10%;"></div>
-          </div>
           <span id="score-live">Score: 0</span>
         </div>
 
@@ -108,7 +105,7 @@
       },
       {
         q: "In Book 10, what does Hermes give Odysseus to protect him from Circe?",
-        options: ["Asphodel", "Ambrosia", "Moly", "Nectar"],
+        options: ["Asphodel", "Honey", "Moly", "Nectar"],
         answer: 2
       },
       {
@@ -119,7 +116,7 @@
       {
         q: "Why does Zeus destroy Odysseus' ship in Book 12?",
         options: [
-          "The crew mutinied",
+          "The crew trash talk Zeus",
           "They killed Helios' sacred cattle",
           "They ignored Poseidon",
           "They opened the wind bag"
@@ -133,7 +130,7 @@
       },
       {
         q: "What does Calypso offer Odysseus if he stays with her?",
-        options: ["A fleet of ships", "Immortality", "Power over enemies", "Future knowledge"],
+        options: ["A fleet of ships", "Immortality", "Power over enemies", "Strength"],
         answer: 1
       },
       {
@@ -157,7 +154,7 @@
           "Only strength matters",
           "It's all luck",
           "Both intelligence and help from the gods matter",
-          "Only Athena matters"
+          "Only Gods matter"
         ],
         answer: 2
       }
@@ -181,7 +178,6 @@
       document.getElementById('q-num').textContent = `Question ${current + 1}`;
       document.getElementById('q-text').textContent = q.q;
       document.getElementById('progress-text').textContent = `Question ${current + 1} of ${questions.length}`;
-      document.getElementById('progress-fill').style.width = `${((current + 1) / questions.length) * 100}%`;
       document.getElementById('score-live').textContent = `Score: ${score}`;
       document.getElementById('next-btn').style.display = 'none';
 
@@ -240,18 +236,6 @@
       document.getElementById('stat-wrong').textContent = questions.length - score;
       document.getElementById('stat-pct').textContent = `${pct}%`;
 
-      let message = '';
-      if (score === 10) {
-        message = "Perfect, you really know the Odyssey!";
-      } else if (score >= 8) {
-        message = "Great job! You clearly understand the gods' roles.";
-      } else if (score >= 6) {
-        message = "Pretty solid — just a bit more review and you've got it.";
-      } else {
-        message = "You might want to review a bit and try again.";
-      }
-
-      document.getElementById('score-message').textContent = message;
 
       const reviewList = document.getElementById('review-list');
       reviewList.innerHTML = '';
@@ -259,20 +243,23 @@
         const q = questions[i];
         const isCorrect = ua === q.answer;
         const div = document.createElement('div');
-        div.style.cssText = `
-          background: rgba(255,255,255,0.02);
-          border: 1px solid ${isCorrect ? 'rgba(74,94,42,0.3)' : 'rgba(181,74,42,0.3)'};
-          border-radius: 4px;
-          padding: 1.1rem 1.35rem;
-          margin-bottom: 0.85rem;
-        `;
+
+        div.className = 'review-card';
+
         div.innerHTML = `
-          <div style="font-family:'Cinzel',serif;font-size:0.68rem;letter-spacing:0.1em;color:${isCorrect ? '#8cb87a' : '#e07a6a'};text-transform:uppercase;margin-bottom:0.4rem;">
+          <p>
             ${isCorrect ? '✓ Correct' : '✗ Incorrect'} — Question ${i + 1}
-          </div>
-          <div style="color:var(--parchment);font-size:0.95rem;margin-bottom:0.3rem;">${q.q}</div>
-          ${!isCorrect ? `<div style="font-size:0.88rem;color:var(--parchment-dark);font-style:italic;">Correct answer: <span style="color:var(--gold-light)">${q.options[q.answer]}</span></div>` : ''}
+          </p>
+
+          <p>${q.q}</p>
+
+          ${
+            !isCorrect
+              ? `<p>Correct answer: ${q.options[q.answer]}</p>`
+              : ''
+          }
         `;
+
         reviewList.appendChild(div);
       });
     }
